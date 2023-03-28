@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #c5e4e7;
+}
+.main-container {
+  width: 100rem;
+  height: 74rem;
+}
+.spliter {
+  padding-top: 10rem;
+  padding-left: 53rem;
+  width: 5.4rem;
+  height: 3.3rem;
+  color: #3d6666;
+}
+.items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 68rem;
+  height: 40rem;
+  margin-top: 4.5rem;
+  margin-left: 20rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 2.6rem rgba(79, 166, 175, 0.200735);
+  border-radius: 1.5rem;
+}
+.input-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  width: 26.6rem;
+  height: 26.2rem;
+  margin-left: 3rem;
+}
+
+.first-input {
+  background-image: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 0.8rem 1rem;
+  background-color: #f3f9fa;
+  color: #9ebbbd;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 26.59rem;
+  height: 4rem;
+  padding-left: 22rem;
+  margin-top: 0.3rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.bill-text {
+  font-size: 1.1rem;
+  color: #5e7a7d;
+}
+.selecttip-text {
+  color: #5e7a7d;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.select-buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.3rem;
+  width: 23.6rem;
+  height: 9.5rem;
+}
+.five,
+.ten,
+.fifteen,
+.twentyfive,
+.fifty {
+  cursor: pointer;
+  width: 8.6rem;
+  height: 4rem;
+  background: #00474b;
+  color: #ffff;
+  border-radius: 0.4rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+.custom {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  width: 8.6rem;
+  height: 4rem;
+  color: #00474b;
+  background-color: #c5e4e7;
+  text-align: center;
+  border-radius: 0.4rem;
+  border: none;
+}
+.five:hover {
+  background-color: #9fe8df;
+}
+.ten:hover {
+  background-color: #9fe8df;
+}
+.fifteen:hover {
+  background-color: #9fe8df;
+}
+.twentyfive:hover {
+  background-color: #9fe8df;
+}
+.fifty:hover {
+  background-color: #9fe8df;
+}
+.numpeople-text {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #5e7a7d;
+}
+.input-people {
+  background-image: url("./images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 0.8rem;
+  width: 26.4rem;
+  height: 4rem;
+  color: #9ebbbd;
+  border: none;
+  background-color: #f3f9fa;
+  padding-left: 25rem;
+}
+.output-item {
+  display: grid;
+  grid-template-columns: auto;
+  width: 27rem;
+  height: 28rem;
+  background-color: #00474b;
+  border-radius: 0.9rem;
+  margin-right: 1rem;
+}
+.amount-fild {
+  width: 20.8rem;
+  height: 4.4rem;
+  margin-left: 2.8rem;
+  margin-top: 3rem;
+}
+.tip-amount {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+.first-person {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  color: #7f9d9f;
+}
+.first-amount {
+  margin-top: -3rem;
+  margin-right: -1rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 4.4rem;
+  text-align: right;
+  letter-spacing: -1px;
+  color: #26c2ae;
+}
+.total-field {
+  width: 20.8rem;
+  height: 4.4rem;
+  margin-left: 2.8rem;
+  margin-top: 0rem;
+}
+.total-text {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+.second-person {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  color: #7f9d9f;
+}
+.second-amount {
+  margin-top: -3rem;
+  margin-right: -1rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 4.4rem;
+  text-align: right;
+  letter-spacing: -1px;
+  color: #26c2ae;
+}
+.reset-button {
+  width: 22.5rem;
+  height: 4rem;
+  margin-left: 2.5rem;
+  border-radius: 0.4rem;
+  background-color: #9fe8df;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: #00474b;
+}
+.reset-button:hover {
+  background-color: #26c2ae;
+}
+@media screen and (max-width: 1440px) {
+  .main-container {
+    width: 90rem;
+    height: 64rem;
+  }
+  .spliter {
+    padding-top: 10rem;
+    padding-left: 36rem;
+    width: 5.4rem;
+    height: 3.3rem;
+    color: #3d6666;
+  }
+  .items-container {
+    width: 57.5rem;
+    height: 30rem;
+    margin-top: 4.5rem;
+    margin-left: 10rem;
+  }
+  .input-grid {
+    width: 23.6rem;
+    height: 24.2rem;
+  }
+  .first-input {
+    width: 23.6rem;
+    height: 3rem;
+  }
+  .first-input:focus {
+    border: 1px solid #5e7a7d;
+  }
+  .five,
+  .ten,
+  .fifteen,
+  .twentyfive,
+  .fifty {
+    cursor: pointer;
+    width: 7.6rem;
+    height: 4rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+  }
+  .custom {
+    font-size: 1.2rem;
+    width: 7.6rem;
+    border-radius: 0.3rem;
+  }
+  .numpeople-text {
+    font-size: 1rem;
+  }
+  .input-people {
+    width: 23.6rem;
+    height: 3rem;
+    padding-left: 22rem;
+  }
+  .output-item {
+    width: 25.8rem;
+    height: 26rem;
+  }
+  .tip-amount {
+    font-size: 1rem;
+  }
+  .first-person {
+    font-size: 0.8rem;
+  }
+  .first-amount {
+    margin-right: 0.5rem;
+    font-size: 3rem;
+  }
+  .total-text {
+    font-size: 1rem;
+  }
+  .second-person {
+    font-size: 0.8rem;
+  }
+  .second-amount {
+    margin-right: 0.5rem;
+    font-size: 3rem;
+  }
+  .reset-button {
+    width: 20.8rem;
+    height: 3rem;
+    margin-left: 2.8rem;
+    border-radius: 0.35rem;
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main-container {
+    width: 18rem;
+    height: 5.6rem;
+  }
+  .spliter {
+    padding-top: 10rem;
+    padding-left: 21rem;
+    width: 5.4rem;
+    height: 3.3rem;
+    color: #3d6666;
+  }
+  .items-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    width: 23.4rem;
+    height: 49.3rem;
+    margin-top: 4.5rem;
+    margin-left: 10rem;
+  }
+  .input-grid {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    width: 21rem;
+    height: 20rem;
+  }
+  .bill-text {
+    font-size: 1.14rem;
+    color: #5e7a7d;
+  }
+  .first-input {
+    width: 20.97rem;
+    height: 3rem;
+    padding-left: 19rem;
+  }
+  .selecttip-text {
+    color: #5e7a7d;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .select-buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.3rem;
+    width: 21rem;
+    height: 9rem;
+  }
+  .five,
+  .ten,
+  .fifteen,
+  .twentyfive,
+  .fifty {
+    cursor: pointer;
+    width: 7.9em;
+    height: 3rem;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+  }
+  .custom {
+    font-size: 1.3rem;
+    width: 10.3rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+  }
+  .numpeople-text {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .input-people {
+    width: 20.97rem;
+    height: 3rem;
+    padding-left: 19rem;
+  }
+  .output-item {
+    background-color: #00474b;
+    margin-top: 2rem;
+    margin-left: 1.6rem;
+    width: 21rem;
+    height: 17rem;
+  }
+  .amount-fild {
+    width: 16.5rem;
+    height: 3rem;
+    margin-left: 2.8rem;
+    margin-top: 3rem;
+  }
+  .tip-amount {
+    font-size: 1rem;
+  }
+  .first-person {
+    font-size: 0.8rem;
+  }
+  .first-amount {
+    margin-right: 0rem;
+    margin-top: -3.8rem;
+    font-size: 3rem;
+  }
+  .total-text {
+    font-size: 1rem;
+  }
+  .second-person {
+    font-size: 0.8rem;
+  }
+  .second-amount {
+    margin-right: 4.4rem;
+    font-size: 3rem;
+  }
+  .reset-button {
+    width: 17rem;
+    height: 3rem;
+    margin-left: 2.5rem;
+    border-radius: 0.4rem;
+    font-size: 1.3rem;
+  }
+}
