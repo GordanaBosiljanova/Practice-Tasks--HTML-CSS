@@ -1,0 +1,448 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  background-image: url("./assets/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#logo-header {
+  background-image: url("./assets/logo.svg");
+  background-repeat: no-repeat;
+}
+#header-pic {
+  background-image: url("./assets/bg-pattern-1.svg");
+  width: 312px;
+  height: 468px;
+  margin-left: 70rem;
+  margin-top: -7rem;
+}
+#header-text {
+  width: 63rem;
+  height: 11rem;
+  margin-top: -14rem;
+  margin-left: 5rem;
+}
+h2 {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.5rem;
+  line-height: 5.5rem;
+  letter-spacing: 0.05rem;
+  color: #191826;
+}
+#header-p {
+  width: 51rem;
+  height: 6.3rem;
+  margin-top: 2rem;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #191826;
+}
+#main-container {
+  position: relative;
+  background-color: black;
+  width: 1200px;
+  height: 600px;
+  margin-top: 30rem;
+  margin-left: 5rem;
+  border-radius: 12px;
+}
+#pattern-main {
+  background-image: url("./assets/bg-pattern-2.svg");
+  background-repeat: no-repeat;
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  left: 23rem;
+}
+#phone-img {
+  position: absolute;
+  top: -13rem;
+  left: 8rem;
+  background-image: url("./assets/illustration-app.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 312px;
+  height: 642px;
+}
+#text-content {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  left: 40rem;
+  top: 8rem;
+  background: #fa7453;
+  border-radius: 12px;
+  width: 350px;
+  height: 550px;
+}
+h3 {
+  padding-top: 3rem;
+  padding-left: 2.3rem;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 52px;
+  color: #fcfaf9;
+}
+#main-p {
+  margin-top: -2rem;
+  margin-left: 2.3rem;
+  width: 18rem;
+  height: 7rem;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #fcfaf9;
+}
+
+#text-price {
+  width: 52px;
+  height: 48px;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fcfaf9;
+  margin-top: -1rem;
+  margin-left: 2.3rem;
+}
+#month {
+  margin-left: 5rem;
+  margin-top: -2.5rem;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: -0.2px;
+  color: #fcfaf9;
+}
+#btn-container {
+  display: grid;
+  margin-left: 2.3rem;
+  width: 300px;
+  height: 150px;
+}
+#ios-btn {
+  cursor: pointer;
+  background-color: #191826;
+  color: #ffff;
+  width: 230px;
+  height: 50px;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1.7rem;
+  border-radius: 12px;
+}
+#ios-btn:hover {
+  background-color: #66e2dc;
+}
+#apple-logo {
+  background-image: url("./assets/icon-apple.svg");
+  background-repeat: no-repeat;
+  width: 1rem;
+  height: 1.3rem;
+  margin-left: 3.6rem;
+  margin-top: -0.5rem;
+}
+.ios-text {
+  width: 6rem;
+  margin-left: 4.8rem;
+  margin-top: -0.9rem;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  color: #fcfaf9;
+  font-weight: 700;
+}
+#android-btn {
+  cursor: pointer;
+  background-color: #e6dede;
+  width: 230px;
+  height: 45px;
+  margin-top: -1rem;
+  margin-left: 1.7rem;
+  border-radius: 12px;
+}
+#android-btn:hover {
+  background-color: #ffb964;
+}
+#android-logo {
+  background-image: url("./assets/icon-android.svg");
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  height: 1.4rem;
+  margin-top: 0.6rem;
+  margin-left: 2.8rem;
+}
+#android-text {
+  width: 7rem;
+  height: 1.5rem;
+  margin-top: -1.3rem;
+  margin-left: 4rem;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  color: #191826;
+}
+#footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 1200px;
+  height: 79px;
+  margin-top: 8rem;
+  margin-left: 5rem;
+}
+#footer-logo {
+  background-image: url("./assets/logo.svg");
+  background-repeat: no-repeat;
+  color: #191826;
+}
+#footer-text {
+  width: 25rem;
+  margin-left: -9rem;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #191826;
+}
+#footer-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16rem;
+  list-style: none;
+}
+#footer-logos li:hover {
+  background-color: #fa7453;
+}
+@media screen and (max-width: 1440px) {
+  #container {
+    background-image: url("./assets/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container {
+    background-image: url("./assets/bg-main-tablet.png");
+    width: 500px;
+    height: 1781px;
+  }
+  #logo-header {
+    width: 10rem;
+    height: 3rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+  }
+  #header-pic {
+    width: 310px;
+    height: 468px;
+    margin-left: 60rem;
+    margin-top: -10rem;
+  }
+  #header-text {
+    margin-left: 3rem;
+  }
+  #main-p {
+    font-size: 20px;
+    margin-left: 3rem;
+  }
+  #main-container {
+    width: 750px;
+    height: 600px;
+    margin-top: -65rem;
+    margin-left: 5rem;
+    position: relative;
+  }
+  #phone-img {
+    position: absolute;
+    top: -10rem;
+    left: 5rem;
+    background-size: 270px 556px;
+  }
+  #pattern-main {
+    width: 290px;
+    height: 420px;
+    left: 17rem;
+    top: -3.5rem;
+  }
+  #text-content {
+    left: 15rem;
+    top: 8.5rem;
+    background: #fa7453;
+    width: 390px;
+    height: 540px;
+  }
+  h3 {
+    padding-top: 2rem;
+    font-size: 25px;
+  }
+  #main-p {
+    width: 15rem;
+    height: 7rem;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  #footer-container {
+    gap: 2rem;
+    width: 750px;
+    height: 143px;
+    margin-top: 8rem;
+    margin-left: 5rem;
+  }
+  #footer-text {
+    margin-top: 3.5rem;
+    margin-left: -16rem;
+  }
+  #footer-logos {
+    padding-left: 8rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  #container {
+    background-image: url("./assets/bg-main-mobile.png");
+    width: 375px;
+    height: 1500px;
+  }
+  #header-pic {
+    display: none;
+  }
+  #header-text {
+    width: 327px;
+    height: 320px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  #header-p {
+    width: 327px;
+    height: 156px;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+  #main-container {
+    width: 375px;
+    height: 700px;
+    margin-top: -60rem;
+    margin-left: 3rem;
+  }
+  #phone-img {
+    position: absolute;
+    top: -8rem;
+    left: 3rem;
+    width: 270px;
+    height: 550px;
+  }
+  #pattern-main {
+    position: absolute;
+    width: 1000px;
+    height: 450px;
+    left: 2rem;
+    top: 2rem;
+  }
+  #text-content {
+    left: 0rem;
+    top: 30rem;
+    width: 375px;
+    height: 550px;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  #main-p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  #text-price {
+    font-size: 60px;
+    margin-top: 3rem;
+    margin-left: 2.7rem;
+  }
+  #month {
+    margin-left: 7rem;
+  }
+  #btn-container {
+    margin-left: 0.8rem;
+    width: 290px;
+    height: 170px;
+  }
+  #ios-btn {
+    width: 260px;
+    height: 60px;
+  }
+  #apple-logo {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-left: 3.6rem;
+    margin-top: 0rem;
+  }
+  .ios-text {
+    width: 7rem;
+    margin-left: 5rem;
+    margin-top: -1.2rem;
+    font-size: 1.1rem;
+  }
+  #android-btn {
+    width: 260px;
+    height: 60px;
+  }
+  #android-logo {
+    width: 4rem;
+    height: 1.5rem;
+    margin-top: 0rem;
+    margin-left: 2.8rem;
+  }
+  #android-text {
+    width: 13rem;
+    height: 1.5rem;
+    margin-top: -1.5rem;
+    margin-left: 2.2rem;
+    font-size: 1.1rem;
+  }
+  #footer-container {
+    width: 327px;
+    height: 179px;
+    margin-top: 25rem;
+    margin-left: 4.5rem;
+  }
+  #footer-logo {
+    width: 146px;
+    height: 32px;
+  }
+  #footer-text {
+    width: 327px;
+    height: 105rem;
+    margin-left: -11rem;
+    margin-top: 5rem;
+  }
+  #footer-logos {
+    width: 10rem;
+    height: 2rem;
+    margin-left: -24rem;
+    margin-top: 13rem;
+    padding: 2rem;
+  }
+}

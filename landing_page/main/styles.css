@@ -1,0 +1,642 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  header {
+    background-image: url("./images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #header-nav {
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    height: 2.4rem;
+    margin-left: 40rem;
+  }
+  .nav-links {
+    cursor: pointer;
+    list-style: none;
+    margin-right: 3rem;
+    margin-top: 5rem;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 1rem;
+  }
+  .nav-links:first-child {
+    background-image: url("./images/logo.svg");
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 2rem;
+    margin-right: auto;
+    margin-left: -33rem;
+    margin-top: 5rem;
+  }
+  .nav-links a:hover {
+    border-bottom: 1px solid whitesmoke;
+  }
+  #dropdwon-button,
+  #dropdown-nav {
+    display: none;
+  }
+  #header-text {
+    width: 40rem;
+    height: 18rem;
+    margin-top: 11rem;
+    margin-left: 8rem;
+    border: 1px solid white;
+  }
+  h2 {
+    padding: 2rem 1.5rem 2rem 2rem;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #fff;
+  }
+  #main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #leader-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 30rem;
+    height: 31rem;
+    margin-left: 8rem;
+    margin-top: 5rem;
+  }
+  #img-leader {
+    width: 45rem;
+    height: 31rem;
+    grid-column: 1/3;
+    background-image: url("./images/desktop/image-interactive.jpg");
+  }
+  #text-leader {
+    grid-column: 2/-1;
+    align-self: center;
+    background-color: #ffffff;
+    color: #b2b2b2;
+    width: 32rem;
+    height: 18rem;
+    margin-top: 13rem;
+    margin-left: 14rem;
+    align-items: center;
+  }
+  #img-leader,
+  #text-leader {
+    grid-row: 1/2;
+  }
+  h3 {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #000000;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-bottom: 2.8rem;
+    text-transform: uppercase;
+  }
+  text {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding-right: 3rem;
+  }
+  #creations {
+    margin-top: 10rem;
+    margin-left: 7.8rem;
+  }
+  #ourcreations-text {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .button-desktop {
+    margin-left: 70rem;
+    margin-top: -2rem;
+  }
+  #seeAll-button {
+    cursor: pointer;
+    width: 7rem;
+    height: 2rem;
+    background-color: #ffffff;
+    border: 1px solid rgb(77, 74, 74);
+    color: black;
+  }
+  .button-mobile {
+    display: none;
+  }
+  #seeAll-button:hover,
+  #seeAll-button:active {
+    background-color: #000000;
+    color: #ffff;
+  }
+  #photo-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 70rem;
+    height: 56rem;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    cursor: pointer;
+    position: relative;
+  }
+  .deep-earth {
+    background-image: url("./images/desktop/image-deep-earth.jpg");
+    background-repeat: no-repeat;
+  }
+  .nigth-arcade {
+    background-image: url("./images/desktop/image-night-arcade.jpg");
+    background-repeat: no-repeat;
+  }
+  .soccer {
+    background-image: url("./images/desktop/image-soccer-team.jpg");
+    background-repeat: no-repeat;
+  }
+  .the-grid {
+    background-image: url("./images/desktop/image-grid.jpg");
+    background-repeat: no-repeat;
+  }
+  .from-up {
+    background-image: url("./images/desktop/image-from-above.jpg");
+    background-repeat: no-repeat;
+  }
+  .pocket {
+    background-image: url("./images/desktop/image-pocket-borealis.jpg");
+    background-repeat: no-repeat;
+  }
+  .curiosity {
+    background-image: url("./images/desktop/image-curiosity.jpg");
+    background-repeat: no-repeat;
+  }
+  .make-it {
+    background-image: url("./images/desktop/image-fisheye.jpg");
+    background-repeat: no-repeat;
+  }
+  .deep-earth:hover {
+    opacity: 60%;
+  }
+  .nigth-arcade:hover {
+    opacity: 60%;
+  }
+  .soccer:hover {
+    opacity: 60%;
+  }
+  .the-grid:hover {
+    opacity: 60%;
+  }
+  .from-up:hover {
+    opacity: 60%;
+  }
+  .pocket:hover {
+    opacity: 60%;
+  }
+  .curiosity:hover {
+    opacity: 60%;
+  }
+  .make-it:hover {
+    opacity: 60%;
+  }
+  .p-one,
+  .p-two,
+  .p-three,
+  .p-four,
+  .p-five,
+  .p-six,
+  .p-seven,
+  .p-eight {
+    position: absolute;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .p-one{
+    top:20rem;
+    left: 2rem;
+  }
+  .p-two {
+    top: 20rem;
+    left: 20rem;
+  }
+  .p-three{
+    top:20rem;
+    left:37.5rem;
+  }
+  .p-four{
+    top:20rem;
+    left:55rem;
+  }
+  .p-five{
+    top:50rem;
+    left:2rem;
+  }
+  .p-six{
+    top:50rem;
+    left:20rem;
+  }
+  .p-seven{
+    top:50rem;
+    left:38rem
+  }
+  .p-eight{
+    top: 50rem;
+    left:56rem;
+  }
+  #footer {
+    width: 90rem;
+    height: 10rem;
+    margin-top: 7rem;
+    background-color: #000000;
+  }
+  #footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  #links-item {
+    width: 30rem;
+    margin-left: 7rem;
+  }
+  #right-item {
+    width: 15rem;
+    margin-right: 14rem;
+  }
+  #footer-nav {
+    display: flex;
+  }
+  #footer-logo {
+    color: white;
+    margin-bottom: 2.5rem;
+  }
+  .footer-links {
+    cursor: pointer;
+    list-style: none;
+    margin-right: 2.5rem;
+  }
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .footer-links a:hover {
+    border-bottom: 1px solid whitesmoke;
+  }
+  #right-item {
+    width: 22rem;
+    padding-left: 8rem;
+  }
+  #nav-logo {
+    display: flex;
+  }
+  .facebook-links {
+    background-image: url("./images/icon-facebook.svg");
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 2rem;
+  }
+  .tweeter-links {
+    background-image: url("./images/icon-twitter.svg");
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.4rem;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 2rem;
+  }
+  .pinter-links {
+    background-image: url("./images/icon-pinterest.svg");
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 2rem;
+  }
+  .instagram-links {
+    background-image: url("./images/icon-instagram.svg");
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 2rem;
+  }
+  #footer-text {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: #fff;
+    padding-top: 1.5rem;
+  }
+  .facebook-links a:active {
+    border-bottom: 1px solid whitesmoke;
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    background-image: url("./images/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 23rem 40rem;
+  }
+  #header-nav {
+    background-image: url("./images/logo.svg");
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+    width: 13rem;
+    height: 1rem;
+    margin-left: 1rem;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .dropdown {
+    padding-top: 2.4rem;
+    position: relative;
+    display: inline-block;
+  }
+  #dropdwon-button {
+    display: inline-block;
+    margin-left: 19.8rem;
+    margin-top: -1rem;
+    top: 3rem;
+    cursor: pointer;
+    background-color: rgb(136, 88, 181);
+  }
+  #dropdown-nav {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    width: 23rem;
+    height: 24rem;
+    left: 0;
+    top: 0;
+    padding-bottom: 2rem;
+  }
+  #dropdown-nav a {
+    margin-left: 1rem;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 35px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .dropdown:hover #dropdown-nav {
+    display: block;
+  }
+  .logo-drop {
+    color: #ffff;
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .close-logo {
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    color: #ffffff;
+    width: 0.8rem;
+  }
+  #header-text {
+    width: 20rem;
+    height: 12rem;
+    margin-top: 7rem;
+    margin-left: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+  #leader-container {
+    background-color: aqua;
+    width: 20rem;
+    height: 33rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+  }
+  #img-leader {
+    background-image: url("./images/mobile/image-interactive.jpg");
+    background-repeat: no-repeat;
+    background-size: 20rem 20rem;
+  }
+  #text-leader {
+    color: #b2b2b2;
+    width: 20rem;
+    height: 16rem;
+    margin-top: 20rem;
+    margin-left: -22.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2.8rem;
+  }
+  #creations {
+    margin-top: 10rem;
+    width: 20rem;
+    height: 4rem;
+    margin-left: 3.2rem;
+  }
+  #ourcreations-text {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  .button-mobile {
+    display: inline-block;
+  }
+  #seeAll-button {
+    cursor: pointer;
+    width: 9rem;
+    height: 2.5rem;
+    margin-left: 6rem;
+    margin-top: 1rem;
+  }
+  .button-desktop {
+    display: none;
+  }
+  #photo-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    width: 20.5rem;
+    height: 70rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    position: relative;
+  }
+  .p-one,
+  .p-two,
+  .p-three,
+  .p-four,
+  .p-five,
+  .p-six,
+  .p-seven,
+  .p-eight {
+    position: absolute;
+    left: 1rem;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .deep-earth {
+    background-image: url("./images/mobile/image-deep-earth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p-one {
+    top: 2.6rem;
+  }
+  .nigth-arcade {
+    background-image: url("./images/mobile/image-night-arcade.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p-two {
+    top: 12rem;
+  }
+  .soccer {
+    background-image: url("./images/mobile/image-soccer-team.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p-three {
+    top: 21rem;
+  }
+  .the-grid {
+    background-image: url("./images/mobile/image-grid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p-four {
+    top: 29.6rem;
+  }
+  .from-up {
+    background-image: url("./images/mobile/image-from-above.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p-five {
+    top: 38rem;
+  }
+  .pocket {
+    background-image: url("./images/mobile/image-pocket-borealis.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p-six {
+    top: 47.4rem;
+  }
+  .curiosity {
+    background-image: url("./images/mobile/image-curiosity.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p-seven {
+    top: 56.5rem;
+  }
+  .make-it {
+    background-image: url("./images/mobile/image-fisheye.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .p-eight {
+    top: 66rem;
+  }
+  #footer {
+    width: 23.4rem;
+    height: 25rem;
+    margin-top: 7rem;
+    background-color: #000000;
+  }
+  #footer-content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 1fr);
+    width: 18rem;
+    height: 20rem;
+    margin-left: 2.6rem;
+    padding-top: 1rem;
+  }
+  #links-item {
+    width: 14rem;
+    height: 12rem;
+    margin-left: 2rem;
+  }
+  #footer-logo {
+    margin-left: 3.5rem;
+    font-size: 1.5rem;
+  }
+  #footer-nav {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: 5.5rem;
+    margin-top: -2rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+  #right-item {
+    width: 14rem;
+    height: 7rem;
+    margin-left: 2rem;
+    padding-left: 6.5rem;
+  }
+  #nav-logo {
+    width: 15rem;
+    height: 2rem;
+    margin-left: -5rem;
+    margin-top: 1.5rem;
+  }
+  #footer-text {
+    width: 14rem;
+    margin-left: -6.5rem;
+    margin-top: -1rem;
+  }
+}

@@ -1,0 +1,239 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <title>Frontend Mentor | GitHub user search app</title>
+    </head>
+    <body>
+      <div class="flex">
+        <section class="git-hub-container">
+          <div class="title-and-mode-container">
+            <div class="title">devfinder</div>
+            <div class="theme-mode">
+              <label for="mode">
+                <input type="checkbox" id="mode" name="mode">
+                <li id="dark-id" style="display: inline; padding-left: 1em;">DARK </li>
+                <li id="light-id" style="display: inline; padding-left: 1em;">LIGHT </li></input>
+              </label>
+            </div>
+          </div>
+          <div class="search-container">
+            <input type="text" name="search-input" id="search-input" placeholder="            Search GitHub username...">
+            <button type="submit" id="btn-search"> Search</button>
+          </div>
+          <div class="div-space">
+    
+          </div>
+          <div class="grid-container">
+            <div class="item1">
+              <img
+                class="cat-photo"
+                src="./assets/octocat.jpeg"
+                alt="Oto Cat Photo"
+              />
+            </div>
+            <div class="item2">
+              <h2 class="otoCat-text">The Octocat</h2>
+              <p class="joined">Joined 25 Jan 2011</p>
+              <p class="atotoCat">@otocat</p>
+              <div class="no-bio">
+                <p class="nobio">This profile has no bio</p>
+              <p class="nobio-lorem">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+                Quisque volutpat mattis eros.
+              </p>
+              </div>
+              
+            </div>
+            <div class="item3">
+              <h3 class="repos">Repos</h3>
+              <p class="pone">8</p>
+              <h3 class="folowers">Followers</h3>
+          
+              <p class="ptwo">3839</p>
+              <h3 class="following">Following</h3>
+              <p class="pthree">9</p>
+            </div>
+            <div class="item4">
+              <div><img src="./assets/icon-location.svg" class="location" />San Francisko</div>
+              <div id="available"> <img src="./assets/icon-twitter.svg" class="teweeter-logo" />No Available</div>
+              <div><img src="./assets/icon-website.svg" class="link-logo" /><a href="https://github.blog/" target="_blank" class="link"
+                >  https://github.blog/</a></div>
+              
+              <div> <img src="./assets/icon-company.svg" class="company-logo" /> @github</div>
+            </div>
+        </section>
+      </div>
+      <script>
+        const modeBtn = document.getElementById('mode');
+    
+        modeBtn.onchange = (e) => {
+          if (modeBtn.checked === true) {
+            document.documentElement.classList.remove("light")
+            document.documentElement.classList.add("dark")
+            document.getElementById("dark-id").style.display = "none"
+            document.getElementById("light-id").style.display = 'inline'
+            window.localStorage.setItem('mode', 'dark');
+          } else {
+            document.documentElement.classList.remove("dark")
+            document.documentElement.classList.add("light")
+            document.getElementById("light-id").style.display = "none"
+            document.getElementById("dark-id").style.display = 'inline'
+            window.localStorage.setItem('mode', 'light');
+          }
+        }
+    
+        const mode = window.localStorage.getItem('mode');
+        if (mode == 'dark') {
+          modeBtn.checked = true;
+          document.documentElement.classList.remove("light")
+          document.documentElement.classList.add("dark")
+          document.getElementById("dark-id").style.display = "none"
+          document.getElementById("light-id").style.display = 'inline'
+        }
+    
+        if (mode == 'light') {
+          modeBtn.checked = false;
+          document.documentElement.classList.remove("dark")
+          document.documentElement.classList.add("light")
+          document.getElementById("light-id").style.display = "none"
+          document.getElementById("dark-id").style.display = 'inline'
+        }
+      </script>
+    </body>
+    
+    </html>
+    Footer
+    © 2023 GitHub, Inc.
+    Footer navigation
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+    
+  </body>
+</html>
+
+<!-- <header>
+  <div class="container-nav">
+    <p class="text">definder</p>
+    <div class="theme-mode">
+      <label for="mode">
+        <input type="checkbox" id="mode" name="mode">
+        <li id="dark-id" style="display: inline; padding-left: 1em;">DARK </li>
+        <img src="./assets/icon-moon.svg" id="moon-img">
+        <li id="light-id" style="display: inline; padding-left: 1em;">LIGHT </li>
+        <img src="./assets/icon-sun.svg" id="sun-img">
+      </input>
+      </label>
+    </div>
+    <button id="logo-sun">LIGHT</button>
+    <img src="./assets/icon-sun.svg" alt="Sun" class="img-sun" />
+  </div>
+</header>
+<div class="container">
+  <img
+    class="searchLogo"
+    src="./assets/icon-search.svg"
+    alt="search-logo"
+  />
+  <input
+    type="text"
+    placeholder="Search Github username..."
+    class="placeholder"
+  />
+  <button class="search-btn" type="submit">Search</button>
+</div>
+<div class="grid-container">
+  <div class="item1">
+    <img
+      class="cat-photo"
+      src="./assets/octocat.jpeg"
+      alt="Oto Cat Photo"
+    />
+  </div>
+  <div class="item2">
+    <h2 class="otoCat-text">The Octocat</h2>
+    <p class="joined">Joined 25 Jan 2011</p>
+    <p class="atotoCat">@otocat</p>
+    <p class="nobio">This profile has no bio</p>
+    <p class="nobio-lorem">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+      Quisque volutpat mattis eros.
+    </p>
+  </div>
+  <div class="item3">
+    <h3 class="repos">Repos</h3>
+    <p class="pone">8</p>
+    <h3 class="folowers">Followers</h3>
+
+    <p class="ptwo">3839</p>
+    <h3 class="following">Following</h3>
+    <p class="pthree">9</p>
+  </div>
+  <div class="item4">
+    <img src="./assets/icon-location.svg" class="location" />
+    <p class="sanfrancisco">San Francisco</p>
+    <img src="./assets/icon-website.svg" class="link-logo" />
+    <a href="https://github.blog/" target="_blank" class="link"
+      >https://github.blog/
+    </a>
+    <div class="notavailable">
+      <img src="./assets/icon-twitter.svg" class="tweeter-logo" />
+      <p class="available">Not Available</p>
+    </div>
+
+    <img src="./assets/icon-company.svg" class="company-logo" />
+    <a
+      href="https://github.com/GordanaBosiljanova"
+      target="_blank"
+      class="github-link"
+      >@github</a
+    >
+  </div>
+</div>
+</div>
+<script>
+  const modeBtn = document.getElementById('mode');
+
+  modeBtn.onchange = (e) => {
+    if (modeBtn.checked === true) {
+      document.documentElement.classList.remove("light")
+      document.documentElement.classList.add("dark")
+      document.getElementById("dark-id").style.display = "none"
+      document.getElementById("light-id").style.display = 'inline'
+      window.localStorage.setItem('mode', 'dark');
+    } else {
+      document.documentElement.classList.remove("dark")
+      document.documentElement.classList.add("light")
+      document.getElementById("light-id").style.display = "none"
+      document.getElementById("dark-id").style.display = 'inline'
+      window.localStorage.setItem('mode', 'light');
+    }
+    const mode = window.localStorage.getItem('mode');
+if (mode == 'dark') {
+  modeBtn.checked = true;
+  document.documentElement.classList.remove("light")
+  document.documentElement.classList.add("dark")
+  document.getElementById("dark-id").style.display = "none"
+  document.getElementById("light-id").style.display = 'inline'
+}
+
+if (mode == 'light') {
+  modeBtn.checked = false;
+  document.documentElement.classList.remove("dark")
+  document.documentElement.classList.add("light")
+  document.getElementById("light-id").style.display = "none"
+  document.getElementById("dark-id").style.display = 'inline'
+}
+  }
+</script> -->

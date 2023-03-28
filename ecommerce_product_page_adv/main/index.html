@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="changes.js"></script>
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+
+  <body>
+    <div class="center-page-flex">
+      <div class="flex-page">
+        <section>
+          <nav>
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+  
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <div class="logo"></div>
+            <div class="nav-links">
+  
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+  
+            </div>
+            <div class="cart-avatar-container">
+              <div class="dropdown">
+                <button onclick="toggleCart()" class="cart"></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <div class="cart-title">
+                    <div class="title">Cart</div>
+                  </div>
+                  <div class="cart-container">
+                    <div class="purchase-info">
+                      <div class="container-info">
+                        <div class="purchase-img"></div>
+                        <div class="purchase-info">Fall Limited Edition Sneakers</div>
+                      </div>
+                      <div class="purchase-prices">
+                        <div class="price"> $125.00 </div>
+                        <div class="multiplication"> x </div>
+                        <div class="quantity"> 3 </div>
+                        <div class="price-to-pay"> $375.00 </div>
+                        <div class="trash"></div>
+                      </div>
+                      <button class="checkout">Checkout</button>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+              <div class="avatar"> </div>
+            </div>
+          </nav>
+          <section>
+            <main>
+              <div class="product-images">
+                <div class="img-container">
+                  <div class="main-product-img">
+                    <div class="prev-next-mobile">
+  
+                      <div class="prev">
+                        <div><img src="./images/icon-previous.svg" alt=""></div>
+                      </div>
+                      <div class="next">
+                        <div><img src="./images/icon-next.svg" alt=""></div>
+                      </div>
+  
+                    </div>
+                  </div>
+                  <div class="mini-images">
+  
+                    <div class="container-gallery">
+                      <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
+                          alt="Imagen 1"></div>
+                      <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
+                          alt="Imagen 2"></div>
+                      <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
+                          alt="Imagen 3"></div>
+                      <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
+                          alt="Imagen 4"></div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+              <div class="info-container">
+                <div class="info-for-product">
+                  <div class="company-logo">Sneaker Company</div>
+                  <div class="product-name">Fall Limited Edition Sneakers</div>
+                  <div class="product-description">These low-profile sneakers are your perfect casual wear companion.
+                    Featuring
+                    a
+                    durable rubber outer sole, they will withstand everything the weather can offer.</div>
+                  <div class="price">
+                    <div class="actual-price"> $125.00
+                      <div class="percent-of-discount"> 50%</div>
+                    </div>
+  
+                    <div class="price-before-discount"> $250.00</div>
+                  </div>
+                  <div class="quantity">
+                    <div class="add-remove-quantity">
+  
+  
+                      <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="0">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                      </div>
+  
+  
+                    </div>
+  
+                    <button class="add-to-cart"> <img src="./images/icon-cart.svg" alt="" srcset="" style="color: white;">
+                      Add to cart</button>
+                  </div>
+                </div>
+              </div>
+  
+            </main>
+          </section>
+        </section>
+      </div>
+    </div>
+    </div>
+        </section>
+    <script>
+      function toggleCart() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.cart')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function increaseCount(a, b) {
+      var input = b.previousElementSibling;
+      var value = parseInt(input.value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      input.value = value;
+    }
+
+    function decreaseCount(a, b) {
+      var input = b.nextElementSibling;
+      var value = parseInt(input.value, 10);
+      if (value > 0) {
+        value = isNaN(value) ? 0 : value;
+        value--;
+        input.value = value;
+      }
+    }
+
+
+
+
+    const images = document.querySelectorAll('.gallery__image'), iconClose = document.getElementById('closeModal');
+    const modalImagesContainer = document.querySelectorAll('.gallery__image')
+
+    let contenedorModal
+    let additionalModalImg
+
+    let currentImage = 0
+
+    for (let i = 0; i < images.length; i++) {
+      images[i].addEventListener('click', () => {
+
+        printModal(images[i].src, images[i].alt)
+      })
+    }
+    console.log(images);
+    const showNext = (current, next) => {
+
+    }
+
+    const printModal = (source, alt) => {
+      contenedorModal = document.createElement('div');
+      contenedorModal.setAttribute('class', 'js-contenedor-modal');
+      contenedorModal.innerHTML =
+        `
+					<a href='#' id='prev' class='arrow left'> <div class='img-prev'> </div>  </a> 
+					<img src='${source}' alt='${alt}' class='modal__image' /> 
+					<div class="js-icono-cerrar" id="closeModal"> </div>
+					<a href='#' class='arrow right' id='next'><div class='img-next'> </div> </a>  
+          
+       
+          
+					`
+      document.body.appendChild(contenedorModal)
+
+      additionalModalImg = document.createElement('div');
+      additionalModalImg.setAttribute('class', 'js-additional-modal');
+      additionalModalImg.innerHTML = `
+      <div class="container-gallery-pic">
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
+                    alt="Imagen 1"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
+                    alt="Imagen 2"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
+                    alt="Imagen 3"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
+                    alt="Imagen 4"></div>
+              </div>
+				
+					`
+      contenedorModal.appendChild(additionalModalImg)
+
+
+      document.addEventListener('click', (e) => {
+        if (e.target === prev) {
+          if (currentImage <= 0) {
+
+            currentImage = images.length - 1;
+            contenedorModal.innerHTML = `
+            <a href='#' id='prev' class='arrow left'> <div class='img-prev'> </div>  </a> 
+					<img src='${images[currentImage].src}' alt='${alt}' class='modal__image' /> 
+					<div class="js-icono-cerrar" id="closeModal"></div>
+          <a href='#' class='arrow right' id='next'><div class='img-next'> </div> </a>  
+       
+          
+					`
+
+          }
+          else {
+            currentImage--
+
+            contenedorModal.innerHTML = `
+            <a href='#' id='prev' class='arrow left'> <div class='img-prev'> </div>  </a> 
+					<img src='${images[currentImage].src}' alt='${alt}' class='modal__image' /> 
+					<div class="js-icono-cerrar" id="closeModal"></div>
+          <a href='#' class='arrow right' id='next'><div class='img-next'> </div> </a>  
+      
+         
+					`
+
+          }
+        }
+        else if (e.target === next) {
+          if (currentImage < images.length - 1) {
+            contenedorModal.innerHTML = `
+            <a href='#' id='prev' class='arrow left'> <div class='img-prev'> </div>  </a> 
+					<img src='${images[currentImage + 1].src}' alt='${alt}' class='modal__image' /> 
+					<div class="js-icono-cerrar" id="closeModal"></div>
+          <a href='#' class='arrow right' id='next'><div class='img-next'> </div> </a>   
+         
+          
+					`
+            currentImage++
+
+          }
+          else {
+            contenedorModal.innerHTML = `
+            <a href='#' id='prev' class='arrow left'> <div class='img-prev'> </div>  </a> 
+					<img src='${images[0].src}' alt='${alt}' class='modal__image' /> 
+					<div class="js-icono-cerrar" id="closeModal"></div>
+          <a href='#' class='arrow right' id='next'><div class='img-next'> </div> </a>  
+         
+          
+         
+					`
+            currentImage = 0
+
+          }
+        }
+      }
+
+      )
+    }
+
+
+    const removeModal = () => contenedorModal.remove()
+
+
+    document.addEventListener('click', (e) => {
+      if (e.target === closeModal) {
+        removeModal()
+      }
+      else {
+        if (e.target.className === 'js-contenedor-modal') {
+          removeModal()
+        }
+
+      }
+    })
+
+    document.addEventListener('keyup', (e) => {
+      if (e.key === 'Escape') {
+        removeModal()
+      }
+    })
+    </script>
+  </body>
+</html>
